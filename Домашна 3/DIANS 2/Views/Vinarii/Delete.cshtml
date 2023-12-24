@@ -1,0 +1,22 @@
+﻿@model DIANS_2.Models.Winery
+
+@{
+    ViewBag.Title = "Remove Winery";
+}
+<link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
+<style>
+    body {
+        background-color: #EDDFB6;
+        font-family: 'Tenor Sans';
+    }
+</style>
+
+<h2>Remove Winery</h2>
+
+<p>Are you sure you want to remove the winery with the name: <strong>@Model.Name</strong>?</p>
+
+@using (Html.BeginForm("Delete", "Vinarii", FormMethod.Post))
+{
+    @Html.HiddenFor(model => model.Name)
+    <button type="submit">Yes, Remove</button>
+}

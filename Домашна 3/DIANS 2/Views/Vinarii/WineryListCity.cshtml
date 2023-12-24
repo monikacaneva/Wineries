@@ -1,0 +1,39 @@
+﻿@model List<DIANS_2.Models.Winery>
+
+@{
+    ViewBag.Title = "WineryListCity";
+}
+<link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
+<style>
+    body {
+        background-color: #EDDFB6;
+        font-family: 'Tenor Sans';
+    }
+</style>
+
+<h2>Листа на винерии според одбраниот град:@ViewBag.City</h2>
+
+<table>
+    <tr>
+        <th>Винерија</th>
+        <th>Град</th>
+        <th>Адреса</th>
+    </tr>
+    @if (Model != null && Model.Any())
+    {
+        foreach (var winery in Model)
+        {
+            <tr>
+                <td>@winery.Name</td>
+                <td>@winery.City</td>
+                <td>@winery.Address</td>
+            </tr>
+        }
+    }
+    else
+    {
+        <tr>
+            <td colspan="4">No wineries available for the selected city</td>
+        </tr>
+    }
+</table>

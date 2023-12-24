@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Tenor Sans' rel='stylesheet'>
+    <title>@ViewBag.Title</title>
+    <style>
+        * {
+            font-family: 'Tenor Sans';
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(/tikves-14-1024x683.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .aboutUs {
+            margin-top: 200px;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        h1 {
+            font-size: 45px;
+            font-weight: lighter;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        p {
+            line-height: 30px;
+            font-size: 18px;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .oval-button {
+            font-size: 20px;
+            color: white;
+            background-color: transparent;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            padding: 5px;
+            padding-left: 80px;
+            padding-right: 80px;
+            border-radius: 35px; /* Half of the width to make it oval */
+            border: 3px solid white;
+        }
+
+            .oval-button:hover {
+                color: burlywood;
+                border-color: burlywood;
+            }
+    </style>
+</head>
+<body>
+    <main aria-labelledby="title">
+        <div class="aboutUs">
+            <h1>Кои сме ние?</h1>
+            <p>
+                Ние сме мала група на студенти полни со ентузијазам да го претставиме<br>
+                македонското вино во неговото најдобро светло.  Нашaта цел е да ги презентираме<br>
+                пред светот прекрасните македонски вина, да ги претставиме локалните винарии и да<br>
+                ве поведеме на вкусно патешествие низ нашата винска земја. Дознајте ја приказната <br>
+                зад секоја чаша македонско вино и препуштете се на уникатното винско искуство што <br>
+                го нуди Македонија.
+            </p>
+            <a href="@Url.Action("Index", "Home")" class="oval-button">НАЗАД</a>
+        </div>
+    </main>
+</body>
+</html>
