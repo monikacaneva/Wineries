@@ -1,16 +1,20 @@
-<b style="font-size:20px">ДИАНС ДОМАШНИ</b>
+# Членови на тимот
 
+- Моника Цанева 211103
+- Климент Стефаноски 211014
+- Андреј Талески 211120
+- Кире Смилков 211065
+- Евросина Стојкоска 211064
 
-Моника Цанева 211103
+## Update за web-site
 
-Климент Стефаноски 211014
+Проектот е поставен нa azure cloud
 
-Андреј Талески 211120
+- Рефракториран `AccountController`
+- Рефракториран `HomeController`
+- Рефракториран `ManageController`
+- Рефракториран `Model/AccountViewModels`
+- Рефракториран `Model/Winery`
+- Рефракториран `View/Home`
 
-Кире Смилков 211065
-
-Евросина Стојкоска 211064
-
-https://dians234.azurewebsites.net/ <br>
-<p style="color: red;">Страната поставена на Azure cloud со рефракториран AccountController, HomeController, ManageController, Model/AccountViewModels, Model/Winery и рефракториран View/Home </p>
-
+Линк до веб сајтот: [https://dians234.azurewebsites.net/](https://dians234.azurewebsites.net/)
